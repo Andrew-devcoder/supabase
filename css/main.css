@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  display: grid;
+  height: 65px;
+  color: #EEEEEE;
+  max-width: 1120px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+}
+.header__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.nav__item {
+  padding: 4px;
+  margin: 16px;
+}
+.nav__item .arrow {
+  margin: 0 0 3px 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.nav__item .down {
+  transform: rotate(45deg);
+}
+
+.header__button {
+  gap: 16px;
+  display: flex;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button__start {
+  padding: 7px 11px;
+  text-align: center;
+  color: white;
+  min-width: 128px;
+  min-height: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #24B47E;
+}
+.button__sign {
+  background: none;
+  color: #EEEEEE;
+}
+
+body {
+  font-family: "Roboto", "Source+Code+Pro", sans-serif;
+  font-style: normal;
+  background: #181818;
+}

@@ -1,0 +1,33 @@
+.header {
+    &__button {
+        gap: 16px;
+        display: flex;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 12px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+.button {
+    &__start {
+        padding: 7px 11px;
+        text-align: center;
+        color: white;
+
+
+        min-width: 128px;
+        min-height: 30px;
+        appearance: none;
+        border: 0;      
+        border-radius: 5px;
+        background: #24B47E;
+    }
+
+    &__sign {
+        background: none;
+        color: #EEEEEE;
+    }
+}
