@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   max-width: 1165px;
+  min-width: 1165px;
   margin: 0 auto;
   padding: 55px 0;
   color: #E0E0E0;
@@ -202,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 280px;
 }
 
 .card__icons {
