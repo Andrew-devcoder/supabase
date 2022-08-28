@@ -1,0 +1,104 @@
+.dashboard {
+    @include containerCenter();
+    margin-bottom: 224px;
+
+    &__body {
+        @include columnBetween();
+        gap: 64px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: #E0E0E0;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    &__subtitle {
+        line-height: 28px;
+        color: #E0E0E0;
+    }
+
+    &__footer {
+        @include rowBetween();
+    }
+
+    &__tabs {
+    }
+
+    &__tab {
+    }
+
+    &__img {
+    }
+
+    &__content {
+    }
+
+    &__text {
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 44px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__block {
+        padding: 21px 0 33px 21px;
+        max-width: 373px;
+        min-width: 373px;
+        max-height: 160px;
+        min-height: 160px;
+        background: #1F1F1F;
+
+        h3 {
+            margin-bottom: 7px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #E0E0E0;
+            img {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__button {
+        padding: 20px 0 0 21px;
+        max-width: 373px;
+        min-width: 373px;
+        max-height: 105px;
+        min-height: 105px;
+        border-bottom: solid 1px #1F1F1F;;
+        font-size: 14px;
+        color: #E0E0E0;
+    }
+
+    &__github {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+}

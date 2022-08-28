@@ -33,12 +33,9 @@
 
     &__body {
         @include columnBetween();
-        max-width: 1165px;
+        @include containerCenter();
         min-width: 1165px;
-        margin: 0 auto;
         padding: 55px 0;
-
-        color: #E0E0E0;
     }
 
     &__header {
@@ -54,11 +51,9 @@
         align-items: center;
         gap: 12px;
 
-        font-weight: 400;
-        font-size: 18px;
         line-height: 28px;
 
-        color: #FFFFFF;
+
     }
 
     &__title {
@@ -66,7 +61,7 @@
         font-size: 48px;
         line-height: 58px;
 
-        color: #FFFFFF;
+
     }
 
     &__content {
@@ -75,7 +70,6 @@
         gap: 16px;
         max-width: 422px;
 
-        font-weight: 400;
         font-size: 14px;
         line-height: 28px;
     }
@@ -101,7 +95,6 @@
 }
 
 .card {
-    font-size: 18px;
     line-height: 28px;
 
     &__icons {
@@ -110,11 +103,7 @@
         align-items: center;
         gap: 8px;
     }
-
-    &__subtitle {
-        color: #FFFFFF;
-    }
-
+    
     &__content {
         color: #E0E0E0;
     }

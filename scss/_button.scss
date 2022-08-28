@@ -30,4 +30,13 @@
         background: none;
         color: #EEEEEE;
     }
+
+    &__blue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #1374EF;
+        min-width: 92px;
+        min-height: 32px;
+    }
 }

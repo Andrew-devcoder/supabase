@@ -3,6 +3,10 @@
     font-style: normal;
     font-weight: 400;
 }
+@mixin containerCenter {
+    max-width: 1165px;
+    margin: 0 auto;
+}
 @mixin flexCenter {
     display: flex;
     align-items: center;

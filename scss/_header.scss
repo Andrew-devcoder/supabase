@@ -2,12 +2,15 @@
 //     display: flex;
 //     align-items: center;
 // }
+// @mixin containerCenter {
+//     max-width: 1165px;
+//     margin: 0 auto;
+// }
 .header {
     display: grid;
     height: 65px;
     color: #EEEEEE;
-    max-width: 1165px;
-    margin: 0 auto;
+    @include containerCenter();
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
