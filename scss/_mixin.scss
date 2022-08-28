@@ -1,0 +1,19 @@
+@mixin fontRobotoRegular {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin columnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin rowBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

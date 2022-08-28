@@ -1,10 +1,6 @@
 @import "./reset";
+@import "./global";
+@import "./mixin";
 @import "./header";
 @import "./button";
 @import "./rectangle";
-
-body {
-    font-family: "Roboto", "Source+Code+Pro", sans-serif;
-    font-style: normal;
-    background: #181818;
-}

@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+body {
+  font-family: "Roboto", "Source+Code+Pro", sans-serif;
+  font-style: normal;
+  background: #181818;
+}
+
 .header {
   display: grid;
   height: 65px;
@@ -141,10 +147,11 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   height: 828px;
   display: flex;
-  border: 2px #E0E0E0;
-  border-style: dashed none;
   font-family: "Roboto";
   font-style: normal;
+  font-weight: 400;
+  border: 2px #E0E0E0;
+  border-style: dashed none;
 }
 .rectangle__body {
   display: flex;
@@ -206,6 +213,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 280px;
 }
 
+.card {
+  font-size: 18px;
+  line-height: 28px;
+}
 .card__icons {
   display: flex;
   flex-direction: row;
@@ -213,24 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
 }
 .card__subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   color: #FFFFFF;
 }
 .card__content {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   color: #E0E0E0;
-}
-
-body {
-  font-family: "Roboto", "Source+Code+Pro", sans-serif;
-  font-style: normal;
-  background: #181818;
 }

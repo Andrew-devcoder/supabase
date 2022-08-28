@@ -1,19 +1,38 @@
+// @mixin columnBetween {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+// @mixin rowBetween {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+// }
+// @mixin fontRobotoRegular {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 400;
+// }
+
+
+////////////////// *fixe center icon
+
+
+
 .rectangle {
     margin: 73px 0 167px;
     max-width: 100%;
     height: 828px;
+
     display: flex;
+
+    @include fontRobotoRegular();
+    
     border: 2px #E0E0E0;
     border-style: dashed none;
 
-    font-family: 'Roboto';
-    font-style: normal;
-
     &__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // gap: 96px;
+        @include columnBetween();
         max-width: 1165px;
         min-width: 1165px;
         margin: 0 auto;
@@ -23,16 +42,11 @@
     }
 
     &__header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        // max-width: 1165px;
+        @include rowBetween();
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include columnBetween();
     }
 
     &__icon {
@@ -73,13 +87,9 @@
         }
     }
 
-    &__img {
-    }
-
     &__footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include rowBetween();
+
     }
 
     &__card {
@@ -91,35 +101,21 @@
 }
 
 .card {
+    font-size: 18px;
+    line-height: 28px;
+
     &__icons {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 8px;
-
-    }
-
-    &__icon {
     }
 
     &__subtitle {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-
         color: #FFFFFF;
     }
 
     &__content {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        // max-width: 280px;
-
         color: #E0E0E0;
     }
 }
