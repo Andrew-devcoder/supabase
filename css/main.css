@@ -314,3 +314,41 @@ body {
   align-items: center;
   margin-bottom: 12px;
 }
+
+.example {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1165px;
+  margin: 0 auto;
+}
+.example__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.example__header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  max-width: 388px;
+  min-width: 388px;
+}
+.example__header p:not(:last-child) {
+  margin-bottom: 19px;
+}
+.example__card {
+  display: flex;
+  gap: 105px;
+}
+.header-example {
+  font-size: 14px;
+  line-height: 20px;
+  color: #E0E0E0;
+}
+.header-example__title {
+  margin: 0 0 12px;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
