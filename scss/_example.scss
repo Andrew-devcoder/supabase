@@ -10,6 +10,8 @@
         @include fontRobotoRegular();
         max-width: 388px;
         min-width: 388px;
+        margin-bottom: 80px;
+
 
         p:not(:last-child) {
             margin-bottom: 19px;
@@ -17,17 +19,30 @@
     }
 
     &__footer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 388px;
+        // gap: 105px;
     }
 
     &__card {
         display: flex;
-        gap: 105px;
+        flex-direction: column;
+        gap: 16px;
     }
 
     &__tabs {
+        display: flex;
+        flex-direction: column;
     }
 
     &__tab {
+        display: flex;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin: 0 0 16px;
+        color: #666666;
     }
 
     &__img {
@@ -43,21 +58,41 @@
         margin: 0 0 12px;
         font-size: 36px;
         line-height: 43px;
-
-        color: #FFFFFF;
     }
 }
 .card-example {
+    max-width: 165px;
+    min-height: 165px;
 
     &__icon {
     }
 
     &__title {
+        font-size: 18px;
+        line-height: 28px;
     }
 
     &__content {
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #E0E0E0;
     }
 
     &__button {
+        font-size: 12px;
+        line-height: 16px;
+        
     }
+}
+.tabs-example {
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        :first-child {
+            color: #FFFFFF;
+        }
 }
