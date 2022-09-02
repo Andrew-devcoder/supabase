@@ -22,7 +22,6 @@
         display: flex;
         justify-content: space-between;
         max-width: 388px;
-        // gap: 105px;
     }
 
     &__card {
@@ -45,8 +44,6 @@
         color: #666666;
     }
 
-    &__img {
-    }
 }
 .header-example {
     font-size: 14px;
@@ -58,14 +55,27 @@
         margin: 0 0 12px;
         font-size: 36px;
         line-height: 43px;
+        color: #FFFFFF;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 13px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #E0E0E0;
+
+            img {
+                padding: 9px 8px 9px 13px;
+            }
     }
 }
 .card-example {
     max-width: 165px;
     min-height: 165px;
-
-    &__icon {
-    }
 
     &__title {
         font-size: 18px;

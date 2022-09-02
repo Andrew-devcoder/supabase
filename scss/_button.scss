@@ -41,6 +41,7 @@
     }
 
     &__example {
+        margin-bottom: 112px;
         padding: 2px 10px;
         max-width: 97px;
         max-height: 20px;
@@ -51,13 +52,19 @@
     }
 
     &__tab {
+        display: flex;
         text-align: center;
         padding: 7px 11px;
         min-width: 90px;
-        max-width: 90px;
         min-height: 30px;
-        max-height: 30px;
         background: #2A2A2A;
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+        border-radius: 4px;
+    }
+
+    &__doc {
+        background: #2A2A2A;
+        border: 1px solid #2A2A2A;
         box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
         border-radius: 4px;
     }
