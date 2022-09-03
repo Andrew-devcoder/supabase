@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  height: 100%;
   font-family: "Roboto", "Source+Code+Pro", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -439,4 +440,33 @@ body {
 }
 .tabs-example :first-child {
   color: #FFFFFF;
+}
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  margin: 128px auto;
+  gap: 48px;
+  max-width: 100%;
+  max-height: 386px;
+}
+.citation__text {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #BBBBBB;
+}
+.citation__text span {
+  color: #FFFFFF;
+}
+.citation__button {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+  display: flex;
+  max-width: 156px;
+  max-height: 38px;
 }

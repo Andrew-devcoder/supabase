@@ -1,0 +1,34 @@
+.citation {
+    display: flex;
+    flex-direction: column;
+    margin: 128px auto;
+    gap: 48px;
+    max-width: 100%;
+    max-height: 386px;
+
+    &__text {
+        margin: 0 auto;
+        font-size: 36px;
+        line-height: 43px;
+
+        text-align: center;
+
+        color: #BBBBBB;
+            span {
+                color: #FFFFFF;
+            }
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: 20px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+        margin: 0 auto;
+        display: flex;
+        max-width: 156px;
+        max-height: 38px;
+    }
+}
