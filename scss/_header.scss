@@ -1,11 +1,3 @@
-// @mixin flexCenter {
-//     display: flex;
-//     align-items: center;
-// }
-// @mixin containerCenter {
-//     max-width: 1165px;
-//     margin: 0 auto;
-// }
 .header {
     display: grid;
     height: 65px;
@@ -22,20 +14,20 @@
 
     &__item {
         @include flexCenter();
-        gap: 40px;
+        gap: pxToRem(40px);
         cursor: pointer;
     }
 }
 .nav {
     &__item {
-        padding: 4px;
-        margin: 16px;
+        padding: pxToRem(4px);
+        margin: pxToRem(16px);
         .arrow {
-            margin: 0 0 3px 10px;
+            margin: 0 0 pxToRem(3px) pxToRem(10px);
             border: solid white;
-            border-width: 0 3px 3px 0;
+            border-width: 0 pxToRem(3px) pxToRem(3px) 0;
             display: inline-block;
-            padding: 3px;
+            padding: pxToRem(3px);
         }
         .down {
             transform: rotate(45deg);

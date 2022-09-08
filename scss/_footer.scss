@@ -5,46 +5,46 @@
 
     &__top {
         @include rowBetween();
-        border-bottom: 2px solid #666666;
-        padding-bottom: 128px;
+        border-bottom: pxToRem(2px) solid #666666;
+        padding-bottom: pxToRem(128px);
     }
 
     &__logo {
         img {
-            margin-bottom: 36px;
+            margin-bottom: pxToRem(36px);
         }
     }
 
     &__nav {
         display: flex;
-        gap: 98px;
+        gap: pxToRem(98px);
     }
 
     &__culumns {
         display: flex;
         flex-direction: column;
             :first-child {
-                margin-bottom: 19px;
+                margin-bottom: pxToRem(19px);
                 color: #666666;
             }
             :not(:first-child) {
-                margin-bottom: 12px;
+                margin-bottom: pxToRem(12px);
                 color: #EEEEEE;
             }
     }
 
     &__column {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: pxToRem(14px);
+        line-height: pxToRem(20px);
     }
 
     &__bootom {
-        padding: 33px 0 112px;
+        padding: pxToRem(33px) 0 pxToRem(112px);
     }
 
     &__info {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: pxToRem(16px);
+        line-height: pxToRem(24px);
 
         color: #666666;
     }
@@ -54,6 +54,6 @@
 }
 .icons {
     display: flex;
-    gap: 24px;
+    gap: pxToRem(24px);
 }
 

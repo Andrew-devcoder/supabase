@@ -1,10 +1,10 @@
 .header {
     &__button {
-        gap: 16px;
+        gap: pxToRem(16px);
         display: flex;
-        border-radius: 10px;
-        font-size: 16px;
-        line-height: 12px;
+        border-radius: pxToRem(10px);
+        font-size: pxToRem(16px);
+        line-height: pxToRem(12px);
         font-family: "Roboto";
         font-style: normal;
         font-weight: 700;
@@ -18,14 +18,14 @@
     text-align: center;
 
     &__start {
-        padding: 7px 11px;
+        padding: pxToRem(7px) pxToRem(11px);
         color: white;
 
-        min-width: 128px;
-        min-height: 30px;
+        min-width: pxToRem(128px);
+        min-height: pxToRem(30px);
         appearance: none;
         border: 0;      
-        border-radius: 5px;
+        border-radius: pxToRem(5px);
         background: #24B47E;
     }
 
@@ -36,36 +36,36 @@
 
     &__blue {
         background: #1374EF;
-        min-width: 92px;
-        min-height: 32px;
+        min-width: pxToRem(92px);
+        min-height: pxToRem(32px);
     }
 
     &__example {
-        margin-bottom: 112px;
-        padding: 2px 10px;
-        max-width: 97px;
-        max-height: 20px;
+        margin-bottom: pxToRem(112px);
+        padding: pxToRem(2px) pxToRem(10px);
+        max-width: pxToRem(97px);
+        max-height: pxToRem(20px);
         text-align: center;
         color: #4299E1;
         background: rgba(49, 130, 206, 0.1);
-        border-radius: 9999px;  
+        border-radius: pxToRem(9999px);  
     }
 
     &__tab {
         display: flex;
         text-align: center;
-        padding: 7px 11px;
-        min-width: 90px;
-        min-height: 30px;
+        padding: pxToRem(7px) pxToRem(11px);
+        min-width: pxToRem(90px);
+        min-height: pxToRem(30px);
         background: #2A2A2A;
-        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
-        border-radius: 4px;
+        box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
+        border-radius: pxToRem(4px);
     }
 
     &__doc {
         background: #2A2A2A;
-        border: 1px solid #2A2A2A;
-        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
-        border-radius: 4px;
+        border: pxToRem(1px) solid #2A2A2A;
+        box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
+        border-radius: pxToRem(4px);
     }
 }

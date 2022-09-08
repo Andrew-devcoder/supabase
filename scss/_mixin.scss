@@ -4,7 +4,7 @@
     font-weight: 400;
 }
 @mixin containerCenter {
-    max-width: 1165px;
+    max-width: pxToRem(1165px);
     margin: 0 auto;
 }
 @mixin flexCenter {

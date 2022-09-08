@@ -1,41 +1,24 @@
-// @mixin columnBetween {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-// }
-// @mixin rowBetween {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
-// @mixin fontRobotoRegular {
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     font-weight: 400;
-// }
-
-
 ////////////////// *fixe center icon
 
 
 
 .rectangle {
-    margin: 73px 0 167px;
+    margin: pxToRem(73px) 0 pxToRem(167px);
     max-width: 100%;
-    height: 828px;
+    height: pxToRem(828px);
 
     display: flex;
 
     @include fontRobotoRegular();
     
-    border: 2px #E0E0E0;
+    border: pxToRem(2px) #E0E0E0;
     border-style: dashed none;
 
     &__body {
         @include columnBetween();
         @include containerCenter();
-        min-width: 1165px;
-        padding: 55px 0;
+        min-width: pxToRem(1165px);
+        padding: pxToRem(55px) 0;
     }
 
     &__header {
@@ -49,17 +32,17 @@
     &__icon {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: pxToRem(12px);
 
-        line-height: 28px;
+        line-height: pxToRem(28px);
 
 
     }
 
     &__title {
         font-weight: 700;
-        font-size: 48px;
-        line-height: 58px;
+        font-size: pxToRem(48px);
+        line-height: pxToRem(58px);
 
 
     }
@@ -67,17 +50,17 @@
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        max-width: 422px;
+        gap: pxToRem(16px);
+        max-width: pxToRem(422px);
 
-        font-size: 14px;
-        line-height: 28px;
+        font-size: pxToRem(14px);
+        line-height: pxToRem(28px);
     }
 
     &__button {
         button {
-            min-width: 133px;
-            min-height: 38px;
+            min-width: pxToRem(133px);
+            min-height: pxToRem(38px);
         }
     }
 
@@ -89,19 +72,19 @@
     &__card {
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        max-width: 280px
+        gap: pxToRem(16px);
+        max-width: pxToRem(280px);
     }
 }
 
 .card {
-    line-height: 28px;
+    line-height: pxToRem(28px);
 
     &__icons {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 8px;
+        gap: pxToRem(8px);
     }
     
     &__content {

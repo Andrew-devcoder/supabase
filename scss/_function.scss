@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+@function pxToRem($pxValue) {
+    @return math.div($pxValue, 16px) * 1rem; 
+}
+
+// div {
+//     width: pxToRem(400px); // → 25rem
+// }

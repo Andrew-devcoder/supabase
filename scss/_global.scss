@@ -2,7 +2,7 @@ body {
     height: 100%;
     font-family: "Roboto", "Source+Code+Pro", sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: pxToRem(18px);
     color: #ffff;
     background: #181818;
 }
