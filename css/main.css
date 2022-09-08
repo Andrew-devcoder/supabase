@@ -300,6 +300,22 @@ body {
   justify-content: space-between;
   flex: auto;
 }
+.dashboard__tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__tabs :first-child {
+  color: #FFFFFF;
+}
+.dashboard__tab {
+  display: flex;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 0 1rem;
+  color: #666666;
+}
 .dashboard__text h2 {
   margin-bottom: 1.25rem;
 }
@@ -358,6 +374,7 @@ body {
   flex: auto;
   max-width: 72.8125rem;
   margin: 0 auto;
+  flex: 1 1 50%;
 }
 .example__body {
   display: flex;

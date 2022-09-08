@@ -34,9 +34,23 @@
     }
 
     &__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+            :first-child {
+                color: #FFFFFF;
+            }
     }
+    
 
     &__tab {
+        display: flex;
+        font-size: pxToRem(12px);
+        line-height: pxToRem(16px);
+        text-align: center;
+        margin: 0 0 pxToRem(16px);
+        color: #666666;
     }
 
     &__img {

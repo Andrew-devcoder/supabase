@@ -1,6 +1,7 @@
 .example {
     @include rowBetween();
     @include containerCenter();
+    flex: 1 1 50%;
 
     &__body {
         @include columnBetween();
@@ -102,6 +103,7 @@
         justify-content: space-between;
         align-items: center;
     }
+    
         :first-child {
             color: #FFFFFF;
         }

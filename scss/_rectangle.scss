@@ -24,7 +24,6 @@
     &__header {
         @include rowBetween();
         flex: 1 1 50%;
-        // max-width: pxToRem(1165px);        
     }
 
     &__text {
