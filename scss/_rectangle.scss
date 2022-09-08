@@ -17,12 +17,14 @@
     &__body {
         @include columnBetween();
         @include containerCenter();
-        min-width: pxToRem(1165px);
+        max-width: pxToRem(1165px);
         padding: pxToRem(55px) 0;
     }
 
     &__header {
         @include rowBetween();
+        flex: 1 1 50%;
+        // max-width: pxToRem(1165px);        
     }
 
     &__text {
@@ -79,6 +81,7 @@
 
 .card {
     line-height: pxToRem(28px);
+    justify-content: flex-end;
 
     &__icons {
         display: flex;

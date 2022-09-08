@@ -15,9 +15,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: auto;
+
 }
 @mixin rowBetween {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex: auto;
+
 }

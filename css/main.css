@@ -195,20 +195,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: auto;
   max-width: 72.8125rem;
   margin: 0 auto;
-  min-width: 72.8125rem;
+  max-width: 72.8125rem;
   padding: 3.4375rem 0;
 }
 .rectangle__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: auto;
+  flex: 1 1 50%;
 }
 .rectangle__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: auto;
 }
 .rectangle__icon {
   display: flex;
@@ -237,6 +241,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: auto;
 }
 .rectangle__card {
   display: flex;
@@ -247,6 +252,7 @@ body {
 
 .card {
   line-height: 1.75rem;
+  justify-content: flex-end;
 }
 .card__icons {
   display: flex;
@@ -267,6 +273,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: auto;
   gap: 4rem;
 }
 .dashboard__header {
@@ -291,6 +298,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: auto;
 }
 .dashboard__text h2 {
   margin-bottom: 1.25rem;
@@ -347,6 +355,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: auto;
   max-width: 72.8125rem;
   margin: 0 auto;
 }
@@ -354,6 +363,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: auto;
 }
 .example__header {
   font-family: "Roboto";
@@ -480,6 +490,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: auto;
   border-bottom: 0.125rem solid #666666;
   padding-bottom: 8rem;
 }
