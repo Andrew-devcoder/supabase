@@ -1,6 +1,6 @@
 .header {
     display: grid;
-    height: 65px;
+    height: pxToRem(65px);
     color: #EEEEEE;
     @include containerCenter();
     font-family: "Roboto";
