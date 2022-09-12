@@ -1,34 +1,78 @@
-.example {
+.opportunities {
     @include rowBetween();
     @include containerCenter();
     flex: 1 1 50%;
 
     &__body {
         @include columnBetween();
+        @include containerCenter();
+        max-width: pxToRem(1165px);
     }
+
 
     &__header {
         @include fontRobotoRegular();
-        max-width: pxToRem(388px);
-        min-width: pxToRem(388px);
-        margin-bottom: pxToRem(80px);
-
+        // margin-bottom: pxToRem(80px);
 
         p:not(:last-child) {
             margin-bottom: pxToRem(19px);
         }
+
+        &--row {
+            @include rowBetween();
+            flex: 1 1 50%;
+        }
     }
 
-    &__footer {
+    &__text {
+        @include columnBetween();
+    }
+
+    &__icon {
         display: flex;
-        justify-content: space-between;
-        max-width: pxToRem(388px);
+        align-items: center;
+        gap: pxToRem(12px);
+
+        line-height: pxToRem(28px);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: pxToRem(48px);
+        line-height: pxToRem(58px);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(16px);
+        max-width: pxToRem(422px);
+
+        font-size: pxToRem(14px);
+        line-height: pxToRem(28px);
+    }
+
+    &__button {
+        button {
+            min-width: pxToRem(133px);
+            min-height: pxToRem(38px);
+        }
+    }
+
+
+    &__footer {
+        @include rowBetween();
+
+        &--container {
+            max-width: pxToRem(388px);
+        }
     }
 
     &__card {
         display: flex;
         flex-direction: column;
         gap: pxToRem(16px);
+        max-width: pxToRem(280px);
     }
 
     &__tabs {
@@ -45,10 +89,29 @@
         color: #666666;
     }
 
+    &--rectangle {
+        margin: pxToRem(73px) 0 pxToRem(167px);
+        max-width: 100%;
+        height: pxToRem(828px);
+    
+        display: flex;
+    
+        @include fontRobotoRegular();
+        
+        border: pxToRem(2px) #E0E0E0;
+        border-style: dashed none;
+
+        padding: pxToRem(55px) 0;
+
+    }
+
 }
-.header-example {
+.header-opportunities {
     font-size: pxToRem(14px);
     line-height: pxToRem(20px);
+
+    max-width: pxToRem(388px);
+    min-width: pxToRem(388px);
 
     color: #E0E0E0;
 
@@ -74,7 +137,24 @@
             }
     }
 }
-.card-example {
+
+.card {
+    line-height: pxToRem(28px);
+    justify-content: flex-end;
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: pxToRem(8px);
+    }
+    
+    &__content {
+        color: #E0E0E0;
+    }
+}
+
+.card-opportunities {
     max-width: pxToRem(165px);
     min-height: pxToRem(165px);
 
@@ -96,7 +176,7 @@
         
     }
 }
-.tabs-example {
+.tabs-opportunities {
 
     &__title {
         display: flex;

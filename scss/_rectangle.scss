@@ -36,16 +36,12 @@
         gap: pxToRem(12px);
 
         line-height: pxToRem(28px);
-
-
     }
 
     &__title {
         font-weight: 700;
         font-size: pxToRem(48px);
         line-height: pxToRem(58px);
-
-
     }
 
     &__content {
@@ -67,7 +63,6 @@
 
     &__footer {
         @include rowBetween();
-
     }
 
     &__card {
