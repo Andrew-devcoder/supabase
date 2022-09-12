@@ -18,7 +18,7 @@
     &__header {
         display: flex;
         flex-direction: column;
-        gap: pxToRem(64px);
+        gap: pxToRem(16px);
     }
 
 
@@ -58,6 +58,12 @@
         line-height: pxToRem(58px);
     }
 
+    &__subtitle {
+        font-size: pxToRem(18px);
+        line-height: pxToRem(28px);
+        color: #E0E0E0;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -78,7 +84,9 @@
 
     &__footer {
         @include rowBetween();
-
+        display: inline-flex;
+        align-items: flex-end;
+        
         &--container {
             max-width: pxToRem(388px);
         }
@@ -103,6 +111,26 @@
         text-align: center;
         margin: 0 0 pxToRem(16px);
         color: #666666;
+    }
+
+    &__block  {
+        padding: 1.3125rem 0 2.0625rem 1.3125rem;
+        max-width: 23.3125rem;
+        min-width: 23.3125rem;
+        max-height: 10rem;
+        min-height: 10rem;
+        background: #1F1F1F;
+
+        h3 {
+            margin-bottom: 0.4375rem;
+        }
+
+        p {
+            margin-bottom: 0.9375rem;
+            font-size: 0.8125rem;
+            line-height: 1.25rem;
+            color: #E0E0E0;
+        }
     }
 
     &--rectangle {
@@ -155,7 +183,8 @@
 
 .card {
     line-height: pxToRem(28px);
-    justify-content: flex-end;
+    display: flex;
+    align-items: flex-start;
 
     &__icons {
         display: flex;
