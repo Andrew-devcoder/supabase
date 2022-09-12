@@ -25,10 +25,6 @@
     &__main {
         @include fontRobotoRegular();
 
-        p:not(:last-child) {
-            margin-bottom: pxToRem(19px);
-        }
-
         &--row {
             @include rowBetween();
             flex: 1 1 50%;
@@ -56,11 +52,14 @@
         font-weight: 700;
         font-size: pxToRem(48px);
         line-height: pxToRem(58px);
+
+        color: #FFFFFF;
     }
 
     &__subtitle {
         font-size: pxToRem(18px);
         line-height: pxToRem(28px);
+
         color: #E0E0E0;
     }
 
@@ -72,15 +71,9 @@
 
         font-size: pxToRem(14px);
         line-height: pxToRem(28px);
-    }
 
-    &__button {
-        button {
-            min-width: pxToRem(133px);
-            min-height: pxToRem(38px);
-        }
+        color: #E0E0E0;
     }
-
 
     &__footer {
         @include rowBetween();
@@ -123,6 +116,7 @@
 
         h3 {
             margin-bottom: 0.4375rem;
+            color: #FFFFFF;
         }
 
         p {
@@ -130,6 +124,22 @@
             font-size: 0.8125rem;
             line-height: 1.25rem;
             color: #E0E0E0;
+        }
+    }
+
+    &__github {
+        display: flex;
+        flex-direction: column;
+        max-width: pxToRem(373px);
+        height: pxToRem(105px);
+        border-bottom: 2px solid #2A2A2A;
+        padding: pxToRem(20px) pxToRem(20px) pxToRem(18px);
+
+        &--row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: pxToRem(4px);
         }
     }
 
@@ -163,21 +173,6 @@
         font-size: pxToRem(36px);
         line-height: pxToRem(43px);
         color: #FFFFFF;
-    }
-
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: pxToRem(13px);
-        font-weight: 400;
-        font-size: pxToRem(14px);
-        line-height: pxToRem(16px);
-        color: #E0E0E0;
-
-            img {
-                padding: pxToRem(9px) pxToRem(8px) pxToRem(9px) pxToRem(13px);
-            }
     }
 }
 

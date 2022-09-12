@@ -26,8 +26,8 @@
                 </div>
                 <div class="header__item">
                     <div class="header__button">
-                        <button class="button__start">Start your project</button>
-                        <button class="button__sign">Sign in</button>
+                        <button class="button button--start">Start your project</button>
+                        <button class="button button__sign">Sign in</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                         <p>With custom policies and permissions that are familiar and easy to implement.</p>
                     </div>
                     <div class="opportunities__button">
-                        <button class="button__start">Start a project</button>
+                        <button class="button button--start">Start a project</button>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
 
                     <div class="tabs-opportunities__title">
                     
-                        <div class="opportunities__tab button__tab">File previews</div>
+                        <div class="opportunities__tab button button__tab">File previews</div>
                         <div class="opportunities__tab">Column view</div>
                         <div class="opportunities__tab">List view</div>
                         <div class="opportunities__tab">Multi select actions</div>
@@ -118,9 +118,9 @@
                 </div>
                 <div class="opportunities__content">
                     <div class="opportunities__text">
-                        <h2>File previews</h2>
+                        <div class="opportunities__subtitle">File previews</div>
                         <p>Preview any media type, including video and audio.</p>
-                        <h3>Check out our opportunities app</h3>
+                        <div class="opportunities__subtitle">Check out our opportunities app</div>
                     </div>
                     <div class="opportunities__block">
                         <h3>Profile management opportunities</h3>
@@ -129,10 +129,12 @@
                     </div>
                     <div class="opportunities__button">
                         <div class="opportunities__github">
-                            <p>nextjs-ts-user-management </p>
-                            <img src="./img/opportunities/github.svg" alt="">
+                            <div class="opportunities__github--row">
+                                <p>nextjs-ts-user-management </p>
+                                <img src="./img/opportunities/github.svg" alt="">
+                            </div>
+                            <button class="button button__start button__blue"><img src="./img/opportunities/triangle.svg" alt=""></button>
                         </div>
-                        <button class="button__start button__blue"><img src="./img/opportunities/triangle.svg" alt=""></button>
                     </div>
                 </div>
             </div>
@@ -164,7 +166,7 @@
         <div class="opportunities__tabs tabs-opportunities">
             <div class="tabs-opportunities__title">
                 
-                <div class="opportunities__tab button__tab">Upload a file</div>
+                <div class="opportunities__tab button button__tab">Upload a file</div>
                 <div class="opportunities__tab">Download a file</div>
                 <div class="opportunities__tab">List files</div>
                 <div class="opportunities__tab">Move and rename files</div>
@@ -181,13 +183,13 @@
                 <div class="header-opportunities__title">Integrates natively with Supabase Auth</div>
                 <p>Using Postgres Row Level Security to create Object access rules.</p>
                 <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
-                <button class="header-opportunities__button button__doc"><img src="./img/opportunities/single-arrow.svg" alt=""> Expore documentation</button>
+                <button class="header-opportunities__button button button__doc"><img src="./img/opportunities/single-arrow.svg" alt=""> Expore documentation</button>
             </div>
         </div>
         <div class="opportunities__tabs tabs-opportunities">
             <div class="tabs-opportunities__title">
                 
-                <div class="opportunities__tab button__tab">Public access to a bucket</div>
+                <div class="opportunities__tab button button__tab">Public access to a bucket</div>
                 <div class="opportunities__tab">Public access to a folder</div>
                 <div class="opportunities__tab">Authenticated access to a bucket</div>
             </div>
@@ -197,8 +199,8 @@
     </section>
 
     <section class="citation">
-        <div class="citation__text">Build in a weekend, <span>scale to millions</span></div>
-        <div class="citation__button button__start">Start your project</div>
+        <div class="citation__title">Build in a weekend, <span>scale to millions</span></div>
+        <button class="button button--start">Start your project</button>
     </section>
 
     <footer class="footer">

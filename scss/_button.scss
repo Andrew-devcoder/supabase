@@ -2,30 +2,20 @@
     &__button {
         gap: pxToRem(16px);
         display: flex;
-        border-radius: pxToRem(10px);
-        font-size: pxToRem(16px);
-        line-height: pxToRem(12px);
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        cursor: pointer;
+
     }
 }
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    border-radius: pxToRem(4px);
+    color: #FFFFFF;
+    padding: pxToRem(8px) pxToRem(16px);
 
-    &__start {
-        padding: pxToRem(7px) pxToRem(11px);
-        color: white;
+    cursor: pointer;
 
-        min-width: pxToRem(128px);
-        min-height: pxToRem(30px);
-        appearance: none;
-        border: 0;      
-        border-radius: pxToRem(5px);
+    &--start {
         background: #24B47E;
     }
 
@@ -36,8 +26,6 @@
 
     &__blue {
         background: #1374EF;
-        min-width: pxToRem(92px);
-        min-height: pxToRem(32px);
     }
 
     &__opportunities {

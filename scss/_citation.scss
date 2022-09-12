@@ -1,34 +1,15 @@
 .citation {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
     margin: pxToRem(128px) auto;
-    gap: pxToRem(48px);
-    max-width: 100%;
-    max-height: pxToRem(386px);
 
-    &__text {
-        margin: 0 auto;
+    &__title {
+        margin-bottom: pxToRem(50px);
         font-size: pxToRem(36px);
         line-height: pxToRem(43px);
-
-        text-align: center;
 
         color: #BBBBBB;
             span {
                 color: #FFFFFF;
             }
-    }
-
-    &__button {
-        font-size: pxToRem(14px);
-        line-height: pxToRem(20px);
-
-        text-align: center;
-
-        color: #FFFFFF;
-        margin: 0 auto;
-        display: flex;
-        max-width: pxToRem(156px);
-        max-height: pxToRem(38px);
     }
 }
