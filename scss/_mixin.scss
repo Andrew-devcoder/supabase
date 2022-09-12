@@ -23,5 +23,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex: auto;
-
+}
+@mixin rowReverseBetween {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex: auto;
 }

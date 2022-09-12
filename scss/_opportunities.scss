@@ -2,17 +2,28 @@
     @include rowBetween();
     @include containerCenter();
     flex: 1 1 50%;
+    margin: 0 auto pxToRem(167px);
 
     &__body {
         @include columnBetween();
         @include containerCenter();
         max-width: pxToRem(1165px);
+        gap: pxToRem(64px);
+
+        &--nogap {
+            gap: 0;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: pxToRem(64px);
     }
 
 
-    &__header {
+    &__main {
         @include fontRobotoRegular();
-        // margin-bottom: pxToRem(80px);
 
         p:not(:last-child) {
             margin-bottom: pxToRem(19px);
@@ -20,6 +31,11 @@
 
         &--row {
             @include rowBetween();
+            flex: 1 1 50%;
+        }
+
+        &--reverse {
+            @include rowReverseBetween();
             flex: 1 1 50%;
         }
     }
@@ -90,7 +106,6 @@
     }
 
     &--rectangle {
-        margin: pxToRem(73px) 0 pxToRem(167px);
         max-width: 100%;
         height: pxToRem(828px);
     
