@@ -38,12 +38,12 @@
         }
     }
 
+    &__column {
+        padding: 0 pxToRem(15px);
+    }
+
     &__img {
         justify-content: flex-end;
-
-        &--padding{
-            padding: 0 15px;
-        }
 
         img {
             max-width: 100%;
@@ -86,7 +86,6 @@
         flex-direction: column;
         gap: pxToRem(16px);
         max-width: pxToRem(422px);
-        padding: 0 15px;
 
         font-size: pxToRem(14px);
         line-height: pxToRem(28px);
@@ -120,8 +119,6 @@
     &__tabs {
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
-
     }
 
     &__tab {
@@ -131,6 +128,8 @@
         text-align: center;
         margin: 0 0 pxToRem(16px);
         color: #666666;
+
+
     }
 
     &__block  {
@@ -248,6 +247,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
+
     }
     
         :first-child {

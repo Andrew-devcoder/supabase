@@ -246,11 +246,11 @@ body {
   flex: auto;
   flex: 1 1 50%;
 }
+.opportunities__column {
+  padding: 0 0.9375rem;
+}
 .opportunities__img {
   justify-content: flex-end;
-}
-.opportunities__img--padding {
-  padding: 0 15px;
 }
 .opportunities__img img {
   max-width: 100%;
@@ -286,7 +286,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   max-width: 26.375rem;
-  padding: 0 15px;
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #E0E0E0;
@@ -316,7 +315,6 @@ body {
 .opportunities__tabs {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
 }
 .opportunities__tab {
   display: flex;
@@ -421,6 +419,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .tabs-opportunities :first-child {
   color: #FFFFFF;
@@ -457,8 +456,10 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex: auto;
-  border-bottom: 0.125rem solid #666666;
-  padding-bottom: 8rem;
+  margin: 0 -0.9375rem;
+}
+.footer__logo {
+  padding: 0 0.9375rem;
 }
 .footer__logo img {
   margin-bottom: 2.25rem;
@@ -466,6 +467,7 @@ body {
 .footer__nav {
   display: flex;
   gap: 6.125rem;
+  padding: 0 0.9375rem;
 }
 @media (max-width: 1024px) {
   .footer__nav {
@@ -490,12 +492,23 @@ body {
 }
 .footer__bootom {
   padding: 2.0625rem 0 7rem;
+  margin: 0 -0.9375rem;
 }
 .footer__info {
   font-size: 1rem;
   line-height: 1.5rem;
+  padding: 0 0.9375rem;
   color: #666666;
 }
+.footer__mode {
+  padding: 0 0.9375rem;
+}
+
+.line {
+  border-bottom: 0.125rem solid #666666;
+  padding-bottom: 8rem;
+}
+
 .icons {
   display: flex;
   gap: 1.5rem;
