@@ -54,6 +54,7 @@
     }
 
     &__doc {
+        max-width: pxToRem(205px);
         background: #2A2A2A;
         border: pxToRem(1px) solid #2A2A2A;
         box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
