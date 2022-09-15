@@ -83,7 +83,7 @@ body {
   color: #EEEEEE;
   max-width: 75.3125rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0.9375rem;
   padding: 0 0.9375rem 4.5625rem;
   font-family: "Roboto";
   font-weight: 400;
@@ -194,7 +194,7 @@ body {
   flex: auto;
   max-width: 75.3125rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0.9375rem;
   flex: 1 1 50%;
   margin: 0 auto 10.4375rem;
 }
@@ -206,7 +206,7 @@ body {
 .opportunities__body {
   max-width: 75.3125rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0.9375rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -444,7 +444,7 @@ body {
   flex-direction: column;
   max-width: 75.3125rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0.9375rem;
 }
 @media (max-width: 1024px) {
   .footer {

@@ -6,7 +6,7 @@
 @mixin containerCenter {
     max-width: pxToRem(1205px);
     margin: 0 auto;
-    padding: 0 pxToRem(20px);
+    padding: 0 pxToRem(15px);
     
     @media (max-width: 1024px) {
         max-width: pxToRem(900px);
