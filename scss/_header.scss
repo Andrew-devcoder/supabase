@@ -2,9 +2,10 @@
     display: grid;
     // height: pxToRem(65px);
     height: pxToRem(138px);
-    padding: 0 0 pxToRem(73px);
+    
     color: #EEEEEE;
     @include containerCenter();
+    padding: 0 pxToRem(15px) pxToRem(73px);
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;

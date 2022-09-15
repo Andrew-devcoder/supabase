@@ -1,7 +1,6 @@
 .header {
     &__button {
         gap: pxToRem(16px);
-        // display: flex;  
 
         @media (max-width: 1024px) {
             gap: pxToRem(8px);
@@ -43,7 +42,6 @@
     }
 
     &__tab {
-        // display: flex;
         text-align: center;
         padding: pxToRem(7px) pxToRem(11px);
         min-width: pxToRem(90px);

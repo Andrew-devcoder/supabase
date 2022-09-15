@@ -80,11 +80,11 @@ body {
 .header {
   display: grid;
   height: 8.625rem;
-  padding: 0 0 4.5625rem;
   color: #EEEEEE;
   max-width: 75.3125rem;
   margin: 0 auto;
   padding: 0 1.25rem;
+  padding: 0 0.9375rem 4.5625rem;
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
