@@ -4,8 +4,13 @@
     font-weight: 400;
 }
 @mixin containerCenter {
-    max-width: pxToRem(1165px);
+    max-width: pxToRem(1205px);
     margin: 0 auto;
+    padding: 0 pxToRem(20px);
+    
+    @media (max-width: 1024px) {
+        max-width: pxToRem(900px);
+    }
 }
 @mixin flexCenter {
     display: flex;
@@ -16,17 +21,16 @@
     flex-direction: column;
     justify-content: space-between;
     flex: auto;
-
 }
 @mixin rowBetween {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
     flex: auto;
 }
 @mixin rowReverseBetween {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    flex-direction: row-reverse;
     flex: auto;
 }

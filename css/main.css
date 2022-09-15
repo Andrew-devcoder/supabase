@@ -82,11 +82,17 @@ body {
   height: 8.625rem;
   padding: 0 0 4.5625rem;
   color: #EEEEEE;
-  max-width: 72.8125rem;
+  max-width: 75.3125rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
+}
+@media (max-width: 1024px) {
+  .header {
+    max-width: 56.25rem;
+  }
 }
 .header__items {
   display: flex;
@@ -99,9 +105,20 @@ body {
   gap: 2.5rem;
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .header__item {
+    gap: 1.875rem;
+  }
+}
+
 .nav__item {
   padding: 0.25rem;
   margin: 1rem;
+}
+@media (max-width: 1024px) {
+  .nav__item {
+    margin: 0.5rem;
+  }
 }
 .nav__item .arrow {
   margin: 0 0 0.1875rem 0.625rem;
@@ -116,7 +133,11 @@ body {
 
 .header__button {
   gap: 1rem;
-  display: flex;
+}
+@media (max-width: 1024px) {
+  .header__button {
+    gap: 0.5rem;
+  }
 }
 
 .button {
@@ -149,7 +170,6 @@ body {
   border-radius: 624.9375rem;
 }
 .button__tab {
-  display: flex;
   text-align: center;
   padding: 0.4375rem 0.6875rem;
   min-width: 5.625rem;
@@ -163,27 +183,39 @@ body {
   border: 0.0625rem solid #2A2A2A;
   box-shadow: 0px 0.125rem 0px rgba(0, 0, 0, 0.043);
   border-radius: 0.25rem;
+  padding: 0.625rem 0.8125rem;
 }
 
 .opportunities {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   flex: auto;
-  max-width: 72.8125rem;
+  max-width: 75.3125rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
   flex: 1 1 50%;
   margin: 0 auto 10.4375rem;
 }
+@media (max-width: 1024px) {
+  .opportunities {
+    max-width: 56.25rem;
+  }
+}
 .opportunities__body {
+  max-width: 75.3125rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: auto;
-  max-width: 72.8125rem;
-  margin: 0 auto;
-  max-width: 72.8125rem;
   gap: 4rem;
+}
+@media (max-width: 1024px) {
+  .opportunities__body {
+    max-width: 56.25rem;
+  }
 }
 .opportunities__body--nogap {
   gap: 0;
@@ -197,20 +229,30 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  margin: 0 -15px;
 }
 .opportunities__main--row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   flex: auto;
   flex: 1 1 50%;
 }
 .opportunities__main--reverse {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  flex-direction: row-reverse;
   flex: auto;
   flex: 1 1 50%;
+}
+.opportunities__img {
+  justify-content: flex-end;
+}
+.opportunities__img--padding {
+  padding: 0 15px;
+}
+.opportunities__img img {
+  max-width: 100%;
 }
 .opportunities__text {
   display: flex;
@@ -223,6 +265,9 @@ body {
   align-items: center;
   gap: 0.75rem;
   line-height: 1.75rem;
+}
+.opportunities__icon img {
+  max-width: 100%;
 }
 .opportunities__title {
   font-weight: 700;
@@ -240,14 +285,15 @@ body {
   flex-direction: column;
   gap: 1rem;
   max-width: 26.375rem;
+  padding: 0 15px;
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #E0E0E0;
 }
 .opportunities__footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   flex: auto;
   display: inline-flex;
   align-items: flex-end;
@@ -261,9 +307,15 @@ body {
   gap: 1rem;
   max-width: 17.5rem;
 }
+@media (max-width: 1024px) {
+  .opportunities__card {
+    max-width: 13.75rem;
+  }
+}
 .opportunities__tabs {
   display: flex;
   flex-direction: column;
+  padding: 0 15px;
 }
 .opportunities__tab {
   display: flex;
@@ -390,13 +442,19 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  max-width: 72.8125rem;
+  max-width: 75.3125rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
+}
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 56.25rem;
+  }
 }
 .footer__top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   flex: auto;
   border-bottom: 0.125rem solid #666666;
   padding-bottom: 8rem;
@@ -407,6 +465,11 @@ body {
 .footer__nav {
   display: flex;
   gap: 6.125rem;
+}
+@media (max-width: 1024px) {
+  .footer__nav {
+    gap: 3.0625rem;
+  }
 }
 .footer__culumns {
   display: flex;

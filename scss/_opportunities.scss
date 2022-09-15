@@ -5,9 +5,9 @@
     margin: 0 auto pxToRem(167px);
 
     &__body {
-        @include columnBetween();
         @include containerCenter();
-        max-width: pxToRem(1165px);
+        @include columnBetween();
+        // max-width: pxToRem(1165px);
         gap: pxToRem(64px);
 
         &--nogap {
@@ -24,6 +24,8 @@
 
     &__main {
         @include fontRobotoRegular();
+        margin: 0 -15px;
+
 
         &--row {
             @include rowBetween();
@@ -33,6 +35,19 @@
         &--reverse {
             @include rowReverseBetween();
             flex: 1 1 50%;
+        }
+    }
+
+    &__img {
+        justify-content: flex-end;
+
+        &--padding{
+            padding: 0 15px;
+        }
+
+        img {
+            max-width: 100%;
+
         }
     }
 
@@ -46,6 +61,9 @@
         gap: pxToRem(12px);
 
         line-height: pxToRem(28px);
+            img {
+            max-width: 100%;
+            }
     }
 
     &__title {
@@ -68,6 +86,7 @@
         flex-direction: column;
         gap: pxToRem(16px);
         max-width: pxToRem(422px);
+        padding: 0 15px;
 
         font-size: pxToRem(14px);
         line-height: pxToRem(28px);
@@ -90,11 +109,19 @@
         flex-direction: column;
         gap: pxToRem(16px);
         max-width: pxToRem(280px);
+
+        @media (max-width: 1024px) {
+            max-width: pxToRem(220px);
+
+        }
+
     }
 
     &__tabs {
         display: flex;
         flex-direction: column;
+        padding: 0 15px;
+
     }
 
     &__tab {

@@ -1,8 +1,11 @@
 .header {
     &__button {
         gap: pxToRem(16px);
-        display: flex;
+        // display: flex;  
 
+        @media (max-width: 1024px) {
+            gap: pxToRem(8px);
+        }
     }
 }
 .button {
@@ -40,7 +43,7 @@
     }
 
     &__tab {
-        display: flex;
+        // display: flex;
         text-align: center;
         padding: pxToRem(7px) pxToRem(11px);
         min-width: pxToRem(90px);
@@ -55,5 +58,7 @@
         border: pxToRem(1px) solid #2A2A2A;
         box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
         border-radius: pxToRem(4px);
+
+        padding: pxToRem(10px) pxToRem(13px);
     }
 }

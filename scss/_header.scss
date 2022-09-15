@@ -18,15 +18,22 @@
         @include flexCenter();
         gap: pxToRem(40px);
         cursor: pointer;
-    }
 
-    &__logo {
+        @media (max-width: 1024px) {
+            gap: pxToRem(30px);
+        }
     }
 }
+
 .nav {
     &__item {
         padding: pxToRem(4px);
         margin: pxToRem(16px);
+        
+        @media (max-width: 1024px) {
+            margin: pxToRem(8px);
+        }
+
         .arrow {
             margin: 0 0 pxToRem(3px) pxToRem(10px);
             border: solid white;
