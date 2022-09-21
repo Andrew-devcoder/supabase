@@ -1,5 +1,6 @@
 .header {
     &__button {
+        display: flex;
         gap: pxToRem(16px);
 
         @media (max-width: 1024px) {
@@ -7,57 +8,114 @@
         }
     }
 }
+// .button {
+//     font-family: "Roboto";
+//     font-style: normal;
+//     font-weight: 700;
+//     border-radius: pxToRem(4px);
+//     color: #FFFFFF;
+//     padding: pxToRem(8px) pxToRem(16px);
+
+//     cursor: pointer;
+
+//     &--start {
+//         background: #24B47E;
+//     }
+
+//     &__sign {
+//         background: none;
+//         color: #EEEEEE;
+//     }
+
+//     &__blue {
+//         background: #1374EF;
+//     }
+
+//     &__opportunities {
+//         margin-bottom: pxToRem(112px);
+//         padding: pxToRem(2px) pxToRem(10px);
+//         max-width: pxToRem(97px);
+//         max-height: pxToRem(20px);
+//         text-align: center;
+//         color: #4299E1;
+//         background: rgba(49, 130, 206, 0.1);
+//         border-radius: pxToRem(9999px);  
+//     }
+
+//     &__tab {
+//         text-align: center;
+//         padding: pxToRem(7px) pxToRem(11px);
+//         min-width: pxToRem(90px);
+//         min-height: pxToRem(30px);
+//         background: #2A2A2A;
+//         box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
+//         border-radius: pxToRem(4px);
+//     }
+
+//     &__doc {
+//         max-width: pxToRem(205px);
+//         background: #2A2A2A;
+//         border: pxToRem(1px) solid #2A2A2A;
+//         box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
+//         border-radius: pxToRem(4px);
+
+//         padding: pxToRem(10px) pxToRem(13px);
+//     }
+// }
+
+
 .button {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     border-radius: pxToRem(4px);
     color: #FFFFFF;
-    padding: pxToRem(8px) pxToRem(16px);
+    
 
     cursor: pointer;
 
-    &--start {
+    &__start {
         background: #24B47E;
-    }
 
-    &__sign {
-        background: none;
-        color: #EEEEEE;
-    }
+        &--s {
+            padding: pxToRem(7px) pxToRem(11px);
+        }
+    
+        &--m {
+            padding: pxToRem(9px) pxToRem(17px);
+        }
 
-    &__blue {
+        &--sign {
+            background: none;
+            color: #EEEEEE;  
+        }
+    }
+// fix button
+    &__deploy {
+        padding: pxToRem(10px) pxToRem(9px) pxToRem(8px) pxToRem(10px);
         background: #1374EF;
     }
 
-    &__opportunities {
-        margin-bottom: pxToRem(112px);
-        padding: pxToRem(2px) pxToRem(10px);
-        max-width: pxToRem(97px);
-        max-height: pxToRem(20px);
-        text-align: center;
-        color: #4299E1;
-        background: rgba(49, 130, 206, 0.1);
-        border-radius: pxToRem(9999px);  
-    }
-
     &__tab {
-        text-align: center;
         padding: pxToRem(7px) pxToRem(11px);
-        min-width: pxToRem(90px);
-        min-height: pxToRem(30px);
-        background: #2A2A2A;
-        box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
         border-radius: pxToRem(4px);
-    }
+        font-size: pxToRem(12px);
+        line-height: pxToRem(16px);
+        margin: 0 0 pxToRem(16px);
+        color: #666666;
 
-    &__doc {
-        max-width: pxToRem(205px);
-        background: #2A2A2A;
-        border: pxToRem(1px) solid #2A2A2A;
-        box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
-        border-radius: pxToRem(4px);
+        &--active {
+            color: #FFFFFF;
+            background: #2A2A2A;
+            box-shadow: 0px pxToRem(2px) 0px rgba(0, 0, 0, 0.043);
+        }
 
-        padding: pxToRem(10px) pxToRem(13px);
+        &--doc {
+            max-width: pxToRem(205px);
+            background: #2A2A2A;
+            color: #E0E0E0;
+            font-weight: 400;
+            font-size: pxToRem(14px);
+            padding: pxToRem(10px) pxToRem(13px);
+        }
     }
 }

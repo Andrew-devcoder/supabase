@@ -96,10 +96,13 @@
     &__footer {
         @include rowBetween();
         display: inline-flex;
-        align-items: flex-end;
         
         &--container {
             max-width: pxToRem(388px);
+        }
+
+        &--end {
+            align-items: flex-end;
         }
     }
 
@@ -119,17 +122,6 @@
     &__tabs {
         display: flex;
         flex-direction: column;
-    }
-
-    &__tab {
-        display: flex;
-        font-size: pxToRem(12px);
-        line-height: pxToRem(16px);
-        text-align: center;
-        margin: 0 0 pxToRem(16px);
-        color: #666666;
-
-
     }
 
     &__block  {
@@ -154,8 +146,6 @@
     }
 
     &__github {
-        display: flex;
-        flex-direction: column;
         max-width: pxToRem(373px);
         height: pxToRem(105px);
         border-bottom: 2px solid #2A2A2A;
@@ -181,7 +171,6 @@
         border-style: dashed none;
 
         padding: pxToRem(55px) 0;
-
     }
 
 }
@@ -235,10 +224,17 @@
         color: #E0E0E0;
     }
 
-    &__button {
+    &--mark {
         font-size: pxToRem(12px);
         line-height: pxToRem(16px);
-        
+        margin-bottom: pxToRem(112px);
+        padding: pxToRem(2px) pxToRem(10px);
+        max-width: pxToRem(97px);
+        max-height: pxToRem(20px);
+        text-align: center;
+        color: #4299E1;
+        background: rgba(49, 130, 206, 0.1);
+        border-radius: pxToRem(9999px);  
     }
 }
 .tabs-opportunities {
@@ -248,10 +244,5 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-
     }
-    
-        :first-child {
-            color: #FFFFFF;
-        }
 }
