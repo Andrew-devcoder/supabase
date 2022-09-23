@@ -1,9 +1,9 @@
 @import "./reset";
-@import "./function";
-@import "./global";
-@import "./mixin";
-@import "./header";
-@import "./button";
-@import "./opportunities";
-@import "./citation";
-@import "./footer";
+@import "./variables/function";
+@import "./variables/global";
+@import "./variables/mixin";
+@import "./header/header";
+@import "./button/button";
+@import "./opportunities/opportunities";
+@import "./citation/citation";
+@import "./footer/footer";
